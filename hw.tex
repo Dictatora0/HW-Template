@@ -1,0 +1,147 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in,letterpaper]{geometry}
+\usepackage{siunitx}
+\usepackage[numbers]{natbib}
+\usepackage{hyperref} % 可点击的引用和URL
+\usepackage{amsfonts} % 更多数学符号
+\usepackage{booktabs} % 更好的表格格式
+\usepackage{caption} % 自定义图表标题
+\usepackage{listings} % 代码高亮显示
+\usepackage{xcolor} % 彩色文本和代码块
+\usepackage{algorithm} % 算法环境
+\usepackage{algorithmic} % 算法描述
+\usepackage{enumitem} % 更好的列表格式
+
+% 设置代码高亮样式
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Homework 1}
+\author{Zhengyi Chen}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+% 简要总结实验的目的、主要发现和结论。
+\end{abstract}
+
+\section{问题描述}
+% 描述实验问题及要求
+
+\section{算法原理}
+% 详细解释算法的基本原理和理论基础
+
+\section{代码实现}
+% 包括代码和解释
+
+\subsection{主要函数与方法}
+% 代码示例
+\begin{lstlisting}[language=Python, caption=示例代码]
+def example_function(param1, param2):
+    """
+    函数功能说明
+    """
+    # 初始化
+    result = 0
+    
+    # 主要逻辑
+    for i in range(param1):
+        result += param2
+        
+    return result
+\end{lstlisting}
+
+\subsection{关键步骤解释}
+% 解释代码中的关键步骤和实现思路
+\begin{enumerate}[label=\arabic*., leftmargin=*]
+    \item 步骤一：...
+    \item 步骤二：...
+    \item 步骤三：...
+\end{enumerate}
+
+\section{实验结果}
+% 展示实验结果，可以包括表格、图表等
+
+\subsection{数据分析}
+% 分析实验数据
+
+\begin{table}[h]
+    \centering
+    \caption{实验数据表}
+    \begin{tabular}{@{}ccc@{}}
+    \toprule
+    参数 & 值 & 单位 \\
+    \midrule
+    参数1 & 值1 & 单位1 \\
+    参数2 & 值2 & 单位2 \\
+    参数3 & 值3 & 单位3 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{可视化结果}
+% 插入图表示例
+\begin{figure}[h]
+    \centering
+    % \includegraphics[width=0.8\textwidth]{example_figure.png}
+    \caption{实验结果图}
+    \label{fig:result}
+\end{figure}
+
+\section{讨论与分析}
+% 对实验结果进行讨论和分析，包括：
+\begin{itemize}
+    \item 算法性能分析
+    \item 实验结果与理论预期的对比
+    \item 可能的改进方向
+\end{itemize}
+
+\section{结论}
+% 总结实验的主要发现和结论
+
+\appendix % 可选部分，用于补充信息
+\section{附录：完整代码}
+% 完整代码列表
+\begin{lstlisting}[language=Python, caption=完整代码]
+# 导入必要的库
+import numpy as np
+import matplotlib.pyplot as plt
+
+# 完整的代码实现
+def main():
+    # 代码实现
+    pass
+
+if __name__ == "__main__":
+    main()
+\end{lstlisting}
+
+\end{document}
