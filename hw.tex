@@ -13,10 +13,31 @@
 \usepackage{algorithm} % 算法环境
 \usepackage{algorithmic} % 算法描述
 \usepackage{enumitem} % 更好的列表格式
+\usepackage{titling} % 用于自定义标题页
+\usepackage{fancyhdr} % 页眉页脚设置
 
 % 支持中文显示
 \usepackage{xeCJK}
 \setCJKmainfont{STHeiti} % 使用系统上已安装的中文字体
+
+% 设置页面样式
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% 重新定义maketitle
+\pretitle{%
+    \begin{center}
+    \LARGE
+    \vspace*{2cm}
+}
+\posttitle{\end{center}}
+
+\preauthor{%
+    \begin{center}
+    \vspace{3cm}
+}
+\postauthor{\end{center}}
 
 % 设置代码高亮样式
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -45,13 +66,30 @@
 
 \lstset{style=mystyle}
 
-\title{Homework 1}
-\author{Lying}
-\date{\today}
+\title{
+    \textbf{课程作业一}
+}
+
+\author{
+    \Large{课程：XXXX} \\[0.5cm]
+    \Large{姓名：Lying} \\[0.3cm]
+    \Large{学号：XXXXXXXXX} \\[0.3cm]
+    \Large{专业：XXXX} \\[0.3cm]
+    \Large{学院：XXXX}
+}
+
+\date{\vspace{2cm}\today}
 
 \begin{document}
 
+% 生成封面
+\begin{titlepage}
 \maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+\newpage
+\setcounter{page}{1}
 
 \begin{abstract}
 % 简要总结实验的目的、主要发现和结论。
