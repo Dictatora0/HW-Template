@@ -4,7 +4,7 @@
 \usepackage[margin=1in,letterpaper]{geometry}
 \usepackage{siunitx}
 \usepackage[numbers]{natbib}
-\usepackage{hyperref} % 可点击的引用和URL
+\usepackage[hidelinks]{hyperref} % 可点击的引用和URL
 \usepackage{amsfonts} % 更多数学符号
 \usepackage{booktabs} % 更好的表格格式
 \usepackage{caption} % 自定义图表标题
@@ -15,6 +15,7 @@
 \usepackage{enumitem} % 更好的列表格式
 \usepackage{titling} % 用于自定义标题页
 \usepackage{fancyhdr} % 页眉页脚设置
+\usepackage[titles]{tocloft} % 自定义目录样式，移除notitlepage选项
 
 % 支持中文显示
 \usepackage{xeCJK}
@@ -94,8 +95,19 @@
 \setcounter{page}{1}
 
 \begin{abstract}
-% 简要总结实验的目的、主要发现和结论。
+本报告旨在探讨两种在开源技术领域广泛应用的基础工具：正则表达式 (Regular Expressions) 和 GCC (GNU Compiler Collection) 编译选项。正则表达式是一种强大的文本处理工具，能够高效地实现字符串的搜索、匹配、替换和提取。GCC 作为一套功能完备的编译器，其丰富的编译选项为开发者提供了对编译过程精细控制的能力，从而优化代码性能、辅助调试以及满足特定的链接需求。本报告将首先详细介绍正则表达式的语法规则和常见应用场景，随后深入解析 GCC 的常用编译选项及其作用，并通过实例展示它们在实际开发中的应用。理解并熟练运用这两者，对于提升开发效率和代码质量具有重要意义。
 \end{abstract}
+\newpage
+
+\begingroup
+\centering
+\Large\bfseries 目录
+\par
+\endgroup
+\vspace{1cm}
+\renewcommand{\contentsname}{}
+\tableofcontents
+\newpage
 
 \section{问题描述}
 % 描述实验问题及要求

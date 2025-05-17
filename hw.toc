@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}问题描述}{3}{section.1}%
+\contentsline {section}{\numberline {2}算法原理}{3}{section.2}%
+\contentsline {section}{\numberline {3}代码实现}{3}{section.3}%
+\contentsline {subsection}{\numberline {3.1}主要函数与方法}{3}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}关键步骤解释}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}实验结果}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}数据分析}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}可视化结果}{4}{subsection.4.2}%
+\contentsline {section}{\numberline {5}讨论与分析}{4}{section.5}%
+\contentsline {section}{\numberline {6}结论}{4}{section.6}%
+\contentsline {section}{\numberline {A}附录：完整代码}{4}{appendix.A}%
